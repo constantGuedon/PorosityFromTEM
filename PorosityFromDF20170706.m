@@ -8,7 +8,7 @@ rec=[128 128 256 256];
 [filename, pathname, filterindex] = uigetfile('*.*','Select DF images', 'MultiSelect', 'off');
 cd(pathname);
 base = strcat('*_');
-nameF = '(1)_Counts_Ti_K_map.tif';
+nameF = '(1)_Counts_Ra_K_map.tif';
 dra = dir([base nameF]);
 for i=1:length(dra)
    DF = im2double(imread(dra(i).name));
